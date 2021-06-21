@@ -1,5 +1,9 @@
 # Git Command
 
+- [Initialization](https://github.com/jsmile631/Git-Command#initialization)
+- [Common](https://github.com/jsmile631/Git-Command#common)
+- [Advanced](https://github.com/jsmile631/Git-Command#advanced)
+
 ## Initialization
 
 Use this command at the first time. and don't forget to add  ```.gitignore``` file if your project needs it
@@ -51,4 +55,45 @@ git pull
 5. Push all your commit to your remote
 ```
 git push --set-upstream origin master
+```
+
+## Advanced
+
+1. List all remotoes 
+```
+git remote -v
+```
+2. Show remote information with [name] is remote name
+```
+git remote show [name]
+```
+3. Add new remote, with [name] is remote name and [url] is url remote
+```
+git remote add [name] [url]
+```
+4. Set default remote to [remote], with [remote] is remote name
+```
+git branch --set-upstream-to [remote]/master
+```
+5. Change push url with [name] is remote name and [url] is url remote
+```
+git remote set-url --push [name] [url]
+```
+
+## Account
+1. Change user name
+```
+git config --global user.name "Your Name"
+```
+2. Change email
+```
+git config --global user.email "you@example.com"
+```
+
+## Updating .gitignore file
+
+```
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working" 
 ```

@@ -54,7 +54,7 @@ git pull
 ```
 5. Push all your commit to your remote
 ```
-git push --set-upstream origin master
+git push
 ```
 
 ## Advanced
